@@ -1,0 +1,421 @@
+.app-container {
+  min-height: 100vh;
+}
+
+/* Tipografia e Navegação */
+.logo-text {
+  color: var(--oris-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-sub {
+  font-size: 0.6rem;
+  color: var(--oris-teal);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-nav a {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.main-nav a:hover {
+  color: var(--oris-teal);
+}
+
+/* Botões */
+.cta-button {
+  background-color: transparent;
+  color: var(--oris-wine);
+  border: 2px solid var(--oris-wine);
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.cta-button:hover {
+  background-color: var(--oris-wine);
+  color: var(--bg-white);
+}
+
+.cta-button.primary {
+  background-color: var(--oris-wine);
+  color: var(--bg-white);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  background-color: #8c2e30;
+}
+
+/* Hero Section */
+.hero {
+  padding-top: 220px; /* Alinhado ao header grande */
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: linear-gradient(135deg, var(--bg-light) 0%, #e0f2f1 100%);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--oris-blue);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+}
+
+/* Sections Globais */
+.section-title {
+  font-size: 2.5rem;
+  color: var(--oris-blue);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: #94a3b8;
+  font-weight: 300;
+}
+
+
+/* Seção de Comparação */
+.comparison {
+  padding: 100px 5%;
+  background-color: var(--bg-white);
+}
+
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.comp-card {
+  flex: 1;
+  min-width: 320px;
+  padding: 3rem;
+  border-radius: 24px;
+  position: relative;
+}
+
+.comp-card.traditional {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  opacity: 0.9;
+}
+
+.comp-card.aligners {
+  background-color: var(--bg-white);
+  border: 2px solid var(--oris-teal);
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.03);
+  z-index: 2;
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  background-color: var(--oris-wine);
+  color: var(--bg-white);
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.comp-card h3 {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.highlight-text {
+  color: var(--oris-blue);
+}
+
+.comp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.comp-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.icon-cross {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.icon-check {
+  color: var(--oris-teal);
+  background-color: rgba(0, 230, 210, 0.15); /* Match the more vibrant teal */
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Transição de Aparelho Fixo */
+.transition-section {
+  padding: 100px 5%;
+  background-color: var(--bg-white);
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.transition-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.transition-text {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.8;
+}
+
+.smiling-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background-color: var(--bg-light);
+  border: 4px solid transparent;
+}
+
+.image-card.traditional-image {
+  opacity: 0.85;
+  filter: grayscale(20%);
+}
+
+.image-card.glow {
+  box-shadow: 0 0 30px rgba(0, 230, 210, 0.4);
+  border-color: var(--oris-teal);
+  transform: scale(1.05);
+}
+
+.smile-photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.image-caption {
+  padding: 1rem;
+  font-weight: 600;
+  width: 100%;
+  background-color: #f1f5f9;
+  color: var(--text-light);
+}
+
+.highlight-caption {
+  background-color: var(--oris-teal);
+  color: var(--oris-blue);
+  font-weight: 800;
+}
+
+.icon-arrow {
+  font-size: 3rem;
+  color: var(--oris-teal);
+}
+
+.transition-btn {
+  font-size: 1.2rem;
+  padding: 1.2rem 3rem;
+}
+
+/* Seção Benefícios/Indicações */
+.benefits {
+  padding: 100px 5%;
+  background-color: var(--bg-light);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 180px; /* Aumentado para acomodar logo gigante */
+  background-color: var(--bg-white);
+  border-bottom: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 150px; /* 300% do tamanho anterior (50px -> 150px) */
+  width: auto;
+  margin-right: 20px;
+}
+
+.hero {
+  padding-top: 220px; /* Ajustado para o novo header maior */
+  min-height: 80vh;
+}
+
+.benefit-item {
+  background-color: var(--bg-white);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-wrapper {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.benefit-item h4 {
+  color: var(--oris-blue);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-item p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-white); /* Fundo claro para o logo sumir no fundo */
+  color: var(--text-dark); /* Texto escuro para contraste */
+  padding: 80px 5% 40px;
+  border-top: 2px solid var(--oris-teal);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column; /* Organização vertical para o logo gigante */
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.logo-img-footer {
+  height: 180px; /* 300% do tamanho anterior (60px -> 180px) */
+  filter: none;
+}
+
+.footer-brand div {
+  color: var(--oris-blue) !important; /* Texto escuro no rodapé claro */
+}
+
+.footer-text {
+  max-width: 500px;
+  color: var(--text-light);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
